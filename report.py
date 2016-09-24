@@ -5,7 +5,8 @@ import time
 import os
 import logging
 import sys
-#properties122
+#properties values
+url=''
 url2 =''
 url1=''
 url0=''
@@ -63,9 +64,10 @@ def readProperties():
         parser = ConfigParser()
         parser.read('report.properties')
         global url1,url2,url0,saledId,revision,regionId,datevalue,reportLocation,saleName
-        url1=parser.get('reports', 'url1')
-        url2=parser.get('reports', 'url2')
-        url0=parser.get('reports', 'url0')
+        urlip=parser.get('reports', 'urlip')
+        url1=urlip+parser.get('reports', 'url1')
+        url2=urlip+parser.get('reports', 'url2')
+        url0=urlip+parser.get('reports', 'url0')
         saledId=parser.get('reports', 'saleName')
         saleName=saledId
         revision=parser.get('reports', 'revision')
@@ -117,13 +119,13 @@ def prepareHeadRequest():
 def getFullSchedule():
         global url1        
         url1=url1+"?"+"scheduleDate="+getDate()+'&sellerId='+saledId+'&revisionNumber='+revision+'&regionId='+regionId+'&byDetails=0&isDrawer=0&isBuyer=0'
-        print(url1)
+        print1(url1)
         return url1
 
 def getUtilUrl():
         global url0
         url0=url0+"?regionId="+regionId
-        print(url0)
+        print1(url0)
         return url0
     
         
@@ -136,22 +138,25 @@ def getGetDeclarationUrl():
         url2=url2+"?"+"date="+getDate()+'&utilId='+saledId+'&revision='+revision+'&regionId='+regionId+'&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0'
 
         #url2=url2+'?regionId='+regionId+'&date='+getDate()+'&revision='+27+'&utilId='+saledId+'&isBuyer=0&byOnBar=0''
-        print(url2)
+        print1(url2)
         return url2
     
 def print1(strva):
     d=str(time.strftime("%d-%m-%Y"))
     t=str(time.strftime("%H-%M-%S"))
     logging.info(d+"::"+t+":>>    "+strva)
-    
+    print(d+"::"+t+":>>    "+strva)    
        
     
 if __name__ == "__main__":
     print('started executing')
-    logging.basicConfig(filename='myapp.log', level=logging.INFO)
+    log_path = os.path.dirname(os.path.realpath(__file__))+"\\"+'logfile.log'
+
+    
+    logging.basicConfig(filename=log_path, level=logging.INFO)
     try:
 
-        print1('stated')
+        print1('stated'+log_path)
     
         readProperties()
         print1('Time'+getDate()+str(time.strftime("%H-%M-%S")))
@@ -162,15 +167,15 @@ if __name__ == "__main__":
         
         r0 = s.get(getUtilUrl(),cookies=cookie)
         saledId=response0(r0.text)
-        
+        print1("success1:"+ url0)
         r1 = s.get(getFullSchedule(), cookies=cookie)
         txt1=response1(r1.text)
         xml1=xmloutput(txt1,'SG')
-        
+        print1("sucess2:"+url1)
         r2=s.get(getGetDeclarationUrl(),cookies=cookie)
         txt2=response2(r2.text)
         xml2=xmloutput(txt2,'DC')
-        
+        print1("sucess3:"+url2)
         
         
         xml=xml1+'\n'+ xml2
@@ -181,7 +186,7 @@ if __name__ == "__main__":
     except Exception as e:
         print1("error Oops try again !")
         print("error dOops  try again !")       
-        print(e)
+        print(e,sys.exc_info()[0])
         
         logging.exception(e)
         errrova=sys.exc_info()[0]
