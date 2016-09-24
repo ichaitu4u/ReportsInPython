@@ -5,7 +5,7 @@ import time
 import os
 import logging
 import sys
-#properties1
+#properties122
 url2 =''
 url1=''
 url0=''
