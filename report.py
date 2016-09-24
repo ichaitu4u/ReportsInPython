@@ -75,7 +75,7 @@ def readProperties():
         datevalue=parser.get('reports','datevalue')
         reportLocation=parser.get('reports','reportLocation')
         print1(reportLocation)
-        print1(saleName)
+        print1("salename::"+saleName)
         return;
 
 def getDate():
@@ -92,7 +92,7 @@ def getReportLocation():
     if (reportLocation.find('Desktop')!=-1):
         reportLocation=os.path.join(os.path.expanduser("~"), "Desktop")
     reportLocation=reportLocation+"\\report_"+saleName+"_"+regionId+"_"+str(getDate())+"_"+str(time.strftime("%H-%M-%S"))+"_"+".xml";
-    print1(reportLocation)
+    print1("reportloc:: "+reportLocation)
     return 
     
 
