@@ -2,33 +2,53 @@ import requests
 import re
 from configparser import ConfigParser
 import time
-
-
-
-s = requests.Session()
+import os
+import logging
+import sys
+#properties
 url2 =''
 url1=''
-def response1(str):
-        a=re.compile('var\sdata\s\=\sJSON\.parse\(\"(.*)\"\)\;')
-        ln=a.findall(str)[0].replace("\\","")
+url0=''
+saledId= ''
+saleName=''
+revision=''
+regionId=''
+datevalue=''
+reportLocation=''
+s = requests.Session()
+def response1(strvalue):
+        #print1(strvalue)
+        a=re.compile('JSON\.parse\(\"(.*)\"\)\;')
+        ln=a.findall(strvalue)[0].replace("\\","")
         x=re.sub('\]\,',"]\n",ln)
         return x
+    
+    
+def response0(strVale): 
+        
+        strVale.replace("UtilId","\nUtilId")
+        x=re.sub('UtilId',"\nUtilId",strVale)
+        #print(x)
+        exp='UtilId\"\:\"(.*)\.*\"Acronym\"\:\"'+saledId+'\"\,'
+        b=re.compile(exp)
+        ln=b.findall(x)[0].split('\"')[0]
+        print1('salesid: '+ln)
+        return ln   
 
 
-def xmloutput(bx):
+def xmloutput(bx,typechar):
         b=re.compile('\[\".*\"\,\".*\"\,(.*)\,\".*\"\]\n')
         ft = b.findall(bx)
-		#ft.pop(0)
         i=-1
-        sg="<SG>\n"
+        sg="<"+typechar+">\n"
         for line in ft:
                 i=i+1
-				if i > 1:
-					sg =sg+"<Block"+str(i)+">"+line.replace("\"","")+"</Block1>\n"
-        sg=sg+"</SG>"
+                if i>1 :
+                    sg =sg+"<Block"+str(i)+">"+line.replace("\"","")+"</Block1>\n"
+        sg=sg+"</"+typechar+">"
 
-        sg.replace('\<Block0\>MOUDA\<\/Block0\>','')
-        print (sg)
+        
+        #print (sg)
         return sg
 
 def response2( txt ):
@@ -42,19 +62,47 @@ def response2( txt ):
 def readProperties():
         parser = ConfigParser()
         parser.read('report.properties')
-        global url1,url2
+        global url1,url2,url0,saledId,revision,regionId,datevalue,reportLocation,saleName
         url1=parser.get('reports', 'url1')
         url2=parser.get('reports', 'url2')
+        url0=parser.get('reports', 'url0')
+        saledId=parser.get('reports', 'saleName')
+        saleName=saledId
+        revision=parser.get('reports', 'revision')
+        regionId=parser.get('reports', 'regionId')
+        datevalue=parser.get('reports','datevalue')
+        reportLocation=parser.get('reports','reportLocation')
+        print1(reportLocation)
+        print1(saleName)
         return;
 
 def getDate():
-        todaytime=time.strftime("%d-%m-%Y")
+        if (datevalue == 'todayDate'):
+            todaytime=time.strftime("%d-%m-%Y")
+        else:
+            todaytime =datevalue
         return todaytime;
-def getFileName():
-        return "report"+getDate()+".xml";
+
+
+
+def getReportLocation():
+    global reportLocation
+    if (reportLocation.find('Desktop')!=-1):
+        reportLocation=os.path.join(os.path.expanduser("~"), "Desktop")
+    reportLocation=reportLocation+"\\report_"+saleName+"_"+regionId+"_"+str(getDate())+"_"+str(time.strftime("%H-%M-%S"))+"_"+".xml";
+    print1(reportLocation)
+    return 
+    
+
+def getFileName(): 
+        getReportLocation()
+        
 
 def writeToFile(xmlValue):
-    text_file = open(getFileName(),'w')
+    
+    getReportLocation()
+    print(reportLocation)
+    text_file = open(reportLocation,'w')
     text_file.write(xmlValue)
     text_file.close()
     return
@@ -62,29 +110,83 @@ def writeToFile(xmlValue):
 
 def prepareHeadRequest():
         cookie = {'ASP.NET_SessionId': '17ab96bd8ffbe8ca58a78657a918558'}
-        sec ={'Upgrade-Insecure-Requests': '1'}
         s.headers.update({'Upgrade-Insecure-Requests': '1'})
         s.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'})
         return cookie
 
+def getFullSchedule():
+        global url1        
+        url1=url1+"?"+"scheduleDate="+getDate()+'&sellerId='+saledId+'&revisionNumber='+revision+'&regionId='+regionId+'&byDetails=0&isDrawer=0&isBuyer=0'
+        print(url1)
+        return url1
 
+def getUtilUrl():
+        global url0
+        url0=url0+"?regionId="+regionId
+        print(url0)
+        return url0
+    
+        
 #url2 ='http://103.7.130.121/WBES/Report/GetDeclarationReport?regionId=2&date=23-09-2016&revision=27&utilId=f9b9e90c-1380-4eb1-bb00-8a0ea85f059c&isBuyer=0&byOnBar=0'
 #url1 = 'http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=21-09-2016&sellerId=f9b9e90c-1380-4eb1-bb00-8a0ea85f059c&revisionNumber=62&regionId=2&byDetails=0&isDrawer=0&isBuyer=0'
 
+def getGetDeclarationUrl():
+        global url2
+        
+        url2=url2+"?"+"date="+getDate()+'&utilId='+saledId+'&revision='+revision+'&regionId='+regionId+'&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0'
 
-readProperties()
-cookie=prepareHeadRequest()
+        #url2=url2+'?regionId='+regionId+'&date='+getDate()+'&revision='+27+'&utilId='+saledId+'&isBuyer=0&byOnBar=0''
+        print(url2)
+        return url2
+    
+def print1(strva):
+    d=str(time.strftime("%d-%m-%Y"))
+    t=str(time.strftime("%H-%M-%S"))
+    logging.info(d+"::"+t+":>>    "+strva)
+    
+       
+    
+if __name__ == "__main__":
+    print('started executing')
+    logging.basicConfig(filename='myapp.log', level=logging.INFO)
+    try:
 
-print(url1)
-print(url2)
-r1 = s.get(url1, cookies=cookie)
-txt1=response1(r1.text)
-xml1=xmloutput(txt1)
-
-r2=s.get(url2,cookies=cookie)
-txt2=response2(r2.text)
-xml2=xmloutput(txt2)
-
-
-xml=xml1+'\n'+ xml2
-writeToFile(xml)
+        print1('stated')
+    
+        readProperties()
+        print1('Time'+getDate()+str(time.strftime("%H-%M-%S")))
+        cookie=prepareHeadRequest()
+        
+        print1(url1)
+        print1(url2)
+        
+        r0 = s.get(getUtilUrl(),cookies=cookie)
+        saledId=response0(r0.text)
+        
+        r1 = s.get(getFullSchedule(), cookies=cookie)
+        txt1=response1(r1.text)
+        xml1=xmloutput(txt1,'SG')
+        
+        r2=s.get(getGetDeclarationUrl(),cookies=cookie)
+        txt2=response2(r2.text)
+        xml2=xmloutput(txt2,'DC')
+        
+        
+        
+        xml=xml1+'\n'+ xml2
+        print1(xml)
+        writeToFile(xml)
+        print1('Finished')
+        
+    except Exception as e:
+        print1("error Oops try again !")
+        print("error dOops  try again !")       
+        print(e)
+        
+        logging.exception(e)
+        errrova=sys.exc_info()[0]
+        print1("error Oops try again !")
+        print("error dOops  try again***************************** !")
+        print("********************************************************error dOops!")
+        
+    print('finished executing')    
