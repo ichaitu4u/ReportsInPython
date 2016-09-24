@@ -1,0 +1,36 @@
+INFO:root:24-09-2016::22-09-33:>>    stated
+INFO:root:24-09-2016::22-09-33:>>    Desktop
+INFO:root:24-09-2016::22-09-33:>>    DGEN
+INFO:root:24-09-2016::22-09-33:>>    Time24-09-201622-09-33
+INFO:root:24-09-2016::22-09-33:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:24-09-2016::22-09-33:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:24-09-2016::22-09-50:>>    salesid: d2de6c3b-809f-4c35-b560-5f697b8bb101
+INFO:root:24-09-2016::22-10-24:>>    error Oops try again !
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "D:\ReportsInPython-master\report.py", line 171, in <module>
+    txt2=response2(r2.text)
+  File "D:\ReportsInPython-master\report.py", line 56, in response2
+    ln=a.findall(txt)[0].replace("\\","")
+IndexError: list index out of range
+INFO:root:24-09-2016::22-10-24:>>    error Oops try again !
+INFO:root:24-09-2016::22-11-12:>>    stated
+INFO:root:24-09-2016::22-11-12:>>    Desktop
+INFO:root:24-09-2016::22-11-12:>>    DGEN
+INFO:root:24-09-2016::22-11-12:>>    Time24-09-201622-11-12
+INFO:root:24-09-2016::22-11-12:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:24-09-2016::22-11-12:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:24-09-2016::22-11-29:>>    salesid: d2de6c3b-809f-4c35-b560-5f697b8bb101
+INFO:root:24-09-2016::22-11-29:>>    http://103.7.130.121//WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:24-09-2016::22-11-47:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=24-09-2016&sellerId=d2de6c3b-809f-4c35-b560-5f697b8bb101&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:24-09-2016::22-12-03:>>    error Oops try again !
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "D:\ReportsInPython-master\report.py", line 171, in <module>
+    txt2=response2(r2.text)
+  File "D:\ReportsInPython-master\report.py", line 56, in response2
+    ln=a.findall(txt)[0].replace("\\","")
+IndexError: list index out of range
+INFO:root:24-09-2016::22-12-03:>>    error Oops try again !
