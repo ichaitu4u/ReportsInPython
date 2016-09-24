@@ -5,7 +5,7 @@ import time
 import os
 import logging
 import sys
-#properties values
+#properties values..
 url=''
 url2 =''
 url1=''
@@ -62,7 +62,8 @@ def response2( txt ):
 
 def readProperties():
         parser = ConfigParser()
-        parser.read('report.properties')
+        properties_path = os.path.dirname(os.path.realpath(__file__))+"\\"+'report.properties'
+        parser.read(properties_path)
         global url1,url2,url0,saledId,revision,regionId,datevalue,reportLocation,saleName
         urlip=parser.get('reports', 'urlip')
         url1=urlip+parser.get('reports', 'url1')
