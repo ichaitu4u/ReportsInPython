@@ -1,36 +1,1189 @@
-INFO:root:24-09-2016::22-09-33:>>    stated
-INFO:root:24-09-2016::22-09-33:>>    Desktop
-INFO:root:24-09-2016::22-09-33:>>    DGEN
-INFO:root:24-09-2016::22-09-33:>>    Time24-09-201622-09-33
-INFO:root:24-09-2016::22-09-33:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
-INFO:root:24-09-2016::22-09-33:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
-INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
-INFO:root:24-09-2016::22-09-50:>>    salesid: d2de6c3b-809f-4c35-b560-5f697b8bb101
-INFO:root:24-09-2016::22-10-24:>>    error Oops try again !
+INFO:root:16-11-2016::07-59-08:>>    statedD:\ReportsInPython-master\logfile.log
+INFO:root:16-11-2016::07-59-08:>>    Desktop
+INFO:root:16-11-2016::07-59-08:>>    salename::KAPS
+INFO:root:16-11-2016::07-59-08:>>    Time16-11-201607-59-08
+INFO:root:16-11-2016::07-59-08:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::07-59-08:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::07-59-08:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::07-59-14:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::07-59-14:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::07-59-14:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::07-59-15:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::07-59-15:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::07-59-16:>>    error Oops try again !
 ERROR:root:list index out of range
 Traceback (most recent call last):
-  File "D:\ReportsInPython-master\report.py", line 171, in <module>
+  File "D:\ReportsInPython-master\report.py", line 177, in <module>
     txt2=response2(r2.text)
-  File "D:\ReportsInPython-master\report.py", line 56, in response2
+  File "D:\ReportsInPython-master\report.py", line 57, in response2
     ln=a.findall(txt)[0].replace("\\","")
 IndexError: list index out of range
-INFO:root:24-09-2016::22-10-24:>>    error Oops try again !
-INFO:root:24-09-2016::22-11-12:>>    stated
-INFO:root:24-09-2016::22-11-12:>>    Desktop
-INFO:root:24-09-2016::22-11-12:>>    DGEN
-INFO:root:24-09-2016::22-11-12:>>    Time24-09-201622-11-12
-INFO:root:24-09-2016::22-11-12:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
-INFO:root:24-09-2016::22-11-12:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
-INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
-INFO:root:24-09-2016::22-11-29:>>    salesid: d2de6c3b-809f-4c35-b560-5f697b8bb101
-INFO:root:24-09-2016::22-11-29:>>    http://103.7.130.121//WBES/ReportFullSchedule/GetUtils?regionId=2
-INFO:root:24-09-2016::22-11-47:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=24-09-2016&sellerId=d2de6c3b-809f-4c35-b560-5f697b8bb101&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
-INFO:root:24-09-2016::22-12-03:>>    error Oops try again !
+INFO:root:16-11-2016::07-59-16:>>    error Oops try again !
+INFO:root:16-11-2016::20-28-13:>>    statedD:\download\fwhtmltoxmlconverter\logfile.log
+INFO:root:16-11-2016::20-28-13:>>    Desktop
+INFO:root:16-11-2016::20-28-13:>>    salename::KAPS
+INFO:root:16-11-2016::20-28-13:>>    Time16-11-201620-28-13
+INFO:root:16-11-2016::20-28-13:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-28-13:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-28-13:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.7.130.121
+INFO:root:16-11-2016::20-28-19:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-28-19:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-28-19:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-29-14:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-29-14:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-29-22:>>    error Oops try again !
 ERROR:root:list index out of range
 Traceback (most recent call last):
-  File "D:\ReportsInPython-master\report.py", line 171, in <module>
+  File "D:\download\fwhtmltoxmlconverter\report.py", line 177, in <module>
     txt2=response2(r2.text)
-  File "D:\ReportsInPython-master\report.py", line 56, in response2
+  File "D:\download\fwhtmltoxmlconverter\report.py", line 57, in response2
     ln=a.findall(txt)[0].replace("\\","")
 IndexError: list index out of range
-INFO:root:24-09-2016::22-12-03:>>    error Oops try again !
+INFO:root:16-11-2016::20-29-22:>>    error Oops try again !
+INFO:root:16-11-2016::20-34-04:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::20-34-04:>>    Desktop
+INFO:root:16-11-2016::20-34-04:>>    salename::KAPS
+INFO:root:16-11-2016::20-34-04:>>    Time16-11-201620-34-04
+INFO:root:16-11-2016::20-34-04:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-34-04:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-34-04:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.7.130.121
+INFO:root:16-11-2016::20-34-06:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-34-06:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-34-06:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-34-06:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-34-06:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-34-06:>>    error Oops try again !
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\chaitu\code\ws\TestPython\report.py", line 177, in <module>
+    txt2=response2(r2.text)
+  File "C:\chaitu\code\ws\TestPython\report.py", line 57, in response2
+    ln=a.findall(txt)[0].replace("\\","")
+IndexError: list index out of range
+INFO:root:16-11-2016::20-34-06:>>    error Oops try again !
+INFO:root:16-11-2016::20-36-23:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::20-36-23:>>    Desktop
+INFO:root:16-11-2016::20-36-23:>>    salename::KAPS
+INFO:root:16-11-2016::20-36-23:>>    Time16-11-201620-36-23
+INFO:root:16-11-2016::20-36-23:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-36-23:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-36-23:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.7.130.121
+INFO:root:16-11-2016::20-36-31:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-36-33:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-36-35:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-37-31:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-37-31:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-37-32:>>    error Oops try again !
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\chaitu\code\ws\TestPython\report.py", line 177, in <module>
+    txt2=response2(r2.text)
+  File "C:\chaitu\code\ws\TestPython\report.py", line 57, in response2
+    ln=a.findall(txt)[0].replace("\\","")
+IndexError: list index out of range
+INFO:root:16-11-2016::20-37-32:>>    error Oops try again !
+INFO:root:16-11-2016::20-43-22:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::20-43-22:>>    Desktop
+INFO:root:16-11-2016::20-43-22:>>    salename::KAPS
+INFO:root:16-11-2016::20-43-22:>>    Time16-11-201620-43-22
+INFO:root:16-11-2016::20-43-22:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-43-22:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-43-22:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::20-43-39:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-43-39:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-43-39:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-44-00:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-44-00:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-44-17:>>    error Oops try again !
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\chaitu\code\ws\TestPython\report.py", line 179, in <module>
+    txt2=response2(r2.text)
+  File "C:\chaitu\code\ws\TestPython\report.py", line 57, in response2
+    ln=a.findall(txt)[0].replace("\\","")
+IndexError: list index out of range
+INFO:root:16-11-2016::20-44-17:>>    error Oops try again !
+INFO:root:16-11-2016::20-51-10:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::20-51-10:>>    Desktop
+INFO:root:16-11-2016::20-51-10:>>    salename::KAPS
+INFO:root:16-11-2016::20-51-10:>>    Time16-11-201620-51-10
+INFO:root:16-11-2016::20-51-10:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-51-10:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-51-10:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::20-51-27:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-51-27:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-51-27:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-51-44:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-51-44:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-52-02:>>    sucess3:http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-52-02:>>    <SG>
+<Block2>0.00</Block1>
+<Block3>0.00</Block1>
+<Block4>0.00</Block1>
+<Block5>0.00</Block1>
+<Block6>0.00</Block1>
+<Block7>0.00</Block1>
+<Block8>0.00</Block1>
+<Block9>0.00</Block1>
+<Block10>0.00</Block1>
+<Block11>0.00</Block1>
+<Block12>0.00</Block1>
+<Block13>0.00</Block1>
+<Block14>0.00</Block1>
+<Block15>0.00</Block1>
+<Block16>0.00</Block1>
+<Block17>0.00</Block1>
+<Block18>0.00</Block1>
+<Block19>0.00</Block1>
+<Block20>0.00</Block1>
+<Block21>0.00</Block1>
+<Block22>0.00</Block1>
+<Block23>0.00</Block1>
+<Block24>0.00</Block1>
+<Block25>0.00</Block1>
+<Block26>0.00</Block1>
+<Block27>0.00</Block1>
+<Block28>0.00</Block1>
+<Block29>0.00</Block1>
+<Block30>0.00</Block1>
+<Block31>0.00</Block1>
+<Block32>0.00</Block1>
+<Block33>0.00</Block1>
+<Block34>0.00</Block1>
+<Block35>0.00</Block1>
+<Block36>0.00</Block1>
+<Block37>0.00</Block1>
+<Block38>0.00</Block1>
+<Block39>0.00</Block1>
+<Block40>0.00</Block1>
+<Block41>0.00</Block1>
+<Block42>0.00</Block1>
+<Block43>0.00</Block1>
+<Block44>0.00</Block1>
+<Block45>0.00</Block1>
+<Block46>0.00</Block1>
+<Block47>0.00</Block1>
+<Block48>0.00</Block1>
+<Block49>0.00</Block1>
+<Block50>0.00</Block1>
+<Block51>0.00</Block1>
+<Block52>0.00</Block1>
+<Block53>0.00</Block1>
+<Block54>0.00</Block1>
+<Block55>0.00</Block1>
+<Block56>0.00</Block1>
+<Block57>0.00</Block1>
+<Block58>0.00</Block1>
+<Block59>0.00</Block1>
+<Block60>0.00</Block1>
+<Block61>0.00</Block1>
+<Block62>0.00</Block1>
+<Block63>0.00</Block1>
+<Block64>0.00</Block1>
+<Block65>0.00</Block1>
+<Block66>0.00</Block1>
+<Block67>0.00</Block1>
+<Block68>0.00</Block1>
+<Block69>0.00</Block1>
+<Block70>0.00</Block1>
+<Block71>0.00</Block1>
+<Block72>0.00</Block1>
+<Block73>0.00</Block1>
+<Block74>0.00</Block1>
+<Block75>0.00</Block1>
+<Block76>0.00</Block1>
+<Block77>0.00</Block1>
+<Block78>0.00</Block1>
+<Block79>0.00</Block1>
+<Block80>0.00</Block1>
+<Block81>0.00</Block1>
+<Block82>0.00</Block1>
+<Block83>0.00</Block1>
+<Block84>0.00</Block1>
+<Block85>0.00</Block1>
+<Block86>0.00</Block1>
+<Block87>0.00</Block1>
+<Block88>0.00</Block1>
+<Block89>0.00</Block1>
+<Block90>0.00</Block1>
+<Block91>0.00</Block1>
+<Block92>0.00</Block1>
+<Block93>0.00</Block1>
+<Block94>0.00</Block1>
+<Block95>0.00</Block1>
+<Block96>0.00</Block1>
+</SG>
+<DC>
+<Block2>0</Block1>
+<Block3>0</Block1>
+<Block4>0</Block1>
+<Block5>0</Block1>
+<Block6>0</Block1>
+<Block7>0</Block1>
+<Block8>0</Block1>
+<Block9>0</Block1>
+<Block10>0</Block1>
+<Block11>0</Block1>
+<Block12>0</Block1>
+<Block13>0</Block1>
+<Block14>0</Block1>
+<Block15>0</Block1>
+<Block16>0</Block1>
+<Block17>0</Block1>
+<Block18>0</Block1>
+<Block19>0</Block1>
+<Block20>0</Block1>
+<Block21>0</Block1>
+<Block22>0</Block1>
+<Block23>0</Block1>
+<Block24>0</Block1>
+<Block25>0</Block1>
+<Block26>0</Block1>
+<Block27>0</Block1>
+<Block28>0</Block1>
+<Block29>0</Block1>
+<Block30>0</Block1>
+<Block31>0</Block1>
+<Block32>0</Block1>
+<Block33>0</Block1>
+<Block34>0</Block1>
+<Block35>0</Block1>
+<Block36>0</Block1>
+<Block37>0</Block1>
+<Block38>0</Block1>
+<Block39>0</Block1>
+<Block40>0</Block1>
+<Block41>0</Block1>
+<Block42>0</Block1>
+<Block43>0</Block1>
+<Block44>0</Block1>
+<Block45>0</Block1>
+<Block46>0</Block1>
+<Block47>0</Block1>
+<Block48>0</Block1>
+<Block49>0</Block1>
+<Block50>0</Block1>
+<Block51>0</Block1>
+<Block52>0</Block1>
+<Block53>0</Block1>
+<Block54>0</Block1>
+<Block55>0</Block1>
+<Block56>0</Block1>
+<Block57>0</Block1>
+<Block58>0</Block1>
+<Block59>0</Block1>
+<Block60>0</Block1>
+<Block61>0</Block1>
+<Block62>0</Block1>
+<Block63>0</Block1>
+<Block64>0</Block1>
+<Block65>0</Block1>
+<Block66>0</Block1>
+<Block67>0</Block1>
+<Block68>0</Block1>
+<Block69>0</Block1>
+<Block70>0</Block1>
+<Block71>0</Block1>
+<Block72>0</Block1>
+<Block73>0</Block1>
+<Block74>0</Block1>
+<Block75>0</Block1>
+<Block76>0</Block1>
+<Block77>0</Block1>
+<Block78>0</Block1>
+<Block79>0</Block1>
+<Block80>0</Block1>
+<Block81>0</Block1>
+<Block82>0</Block1>
+<Block83>0</Block1>
+<Block84>0</Block1>
+<Block85>0</Block1>
+<Block86>0</Block1>
+<Block87>0</Block1>
+<Block88>0</Block1>
+<Block89>0</Block1>
+<Block90>0</Block1>
+<Block91>0</Block1>
+<Block92>0</Block1>
+<Block93>0</Block1>
+<Block94>0</Block1>
+<Block95>0</Block1>
+<Block96>0</Block1>
+</DC>
+INFO:root:16-11-2016::20-52-02:>>    reportloc:: C:\Users\admin\Desktop\report_KAPS_2_16-11-2016_20-52-02_.xml
+INFO:root:16-11-2016::20-52-02:>>    Finished
+INFO:root:16-11-2016::20-55-04:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::20-55-04:>>    Desktop
+INFO:root:16-11-2016::20-55-04:>>    salename::KAPS
+INFO:root:16-11-2016::20-55-04:>>    Time16-11-201620-55-04
+INFO:root:16-11-2016::20-55-04:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-55-04:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-55-04:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::20-55-22:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-55-22:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-55-22:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-55-39:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-55-39:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-56-00:>>    sucess3:http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-56-00:>>    <SG>
+<Block2>0.00</Block2>
+<Block3>0.00</Block3>
+<Block4>0.00</Block4>
+<Block5>0.00</Block5>
+<Block6>0.00</Block6>
+<Block7>0.00</Block7>
+<Block8>0.00</Block8>
+<Block9>0.00</Block9>
+<Block10>0.00</Block10>
+<Block11>0.00</Block11>
+<Block12>0.00</Block12>
+<Block13>0.00</Block13>
+<Block14>0.00</Block14>
+<Block15>0.00</Block15>
+<Block16>0.00</Block16>
+<Block17>0.00</Block17>
+<Block18>0.00</Block18>
+<Block19>0.00</Block19>
+<Block20>0.00</Block20>
+<Block21>0.00</Block21>
+<Block22>0.00</Block22>
+<Block23>0.00</Block23>
+<Block24>0.00</Block24>
+<Block25>0.00</Block25>
+<Block26>0.00</Block26>
+<Block27>0.00</Block27>
+<Block28>0.00</Block28>
+<Block29>0.00</Block29>
+<Block30>0.00</Block30>
+<Block31>0.00</Block31>
+<Block32>0.00</Block32>
+<Block33>0.00</Block33>
+<Block34>0.00</Block34>
+<Block35>0.00</Block35>
+<Block36>0.00</Block36>
+<Block37>0.00</Block37>
+<Block38>0.00</Block38>
+<Block39>0.00</Block39>
+<Block40>0.00</Block40>
+<Block41>0.00</Block41>
+<Block42>0.00</Block42>
+<Block43>0.00</Block43>
+<Block44>0.00</Block44>
+<Block45>0.00</Block45>
+<Block46>0.00</Block46>
+<Block47>0.00</Block47>
+<Block48>0.00</Block48>
+<Block49>0.00</Block49>
+<Block50>0.00</Block50>
+<Block51>0.00</Block51>
+<Block52>0.00</Block52>
+<Block53>0.00</Block53>
+<Block54>0.00</Block54>
+<Block55>0.00</Block55>
+<Block56>0.00</Block56>
+<Block57>0.00</Block57>
+<Block58>0.00</Block58>
+<Block59>0.00</Block59>
+<Block60>0.00</Block60>
+<Block61>0.00</Block61>
+<Block62>0.00</Block62>
+<Block63>0.00</Block63>
+<Block64>0.00</Block64>
+<Block65>0.00</Block65>
+<Block66>0.00</Block66>
+<Block67>0.00</Block67>
+<Block68>0.00</Block68>
+<Block69>0.00</Block69>
+<Block70>0.00</Block70>
+<Block71>0.00</Block71>
+<Block72>0.00</Block72>
+<Block73>0.00</Block73>
+<Block74>0.00</Block74>
+<Block75>0.00</Block75>
+<Block76>0.00</Block76>
+<Block77>0.00</Block77>
+<Block78>0.00</Block78>
+<Block79>0.00</Block79>
+<Block80>0.00</Block80>
+<Block81>0.00</Block81>
+<Block82>0.00</Block82>
+<Block83>0.00</Block83>
+<Block84>0.00</Block84>
+<Block85>0.00</Block85>
+<Block86>0.00</Block86>
+<Block87>0.00</Block87>
+<Block88>0.00</Block88>
+<Block89>0.00</Block89>
+<Block90>0.00</Block90>
+<Block91>0.00</Block91>
+<Block92>0.00</Block92>
+<Block93>0.00</Block93>
+<Block94>0.00</Block94>
+<Block95>0.00</Block95>
+<Block96>0.00</Block96>
+</SG>
+<DC>
+<Block2>0</Block2>
+<Block3>0</Block3>
+<Block4>0</Block4>
+<Block5>0</Block5>
+<Block6>0</Block6>
+<Block7>0</Block7>
+<Block8>0</Block8>
+<Block9>0</Block9>
+<Block10>0</Block10>
+<Block11>0</Block11>
+<Block12>0</Block12>
+<Block13>0</Block13>
+<Block14>0</Block14>
+<Block15>0</Block15>
+<Block16>0</Block16>
+<Block17>0</Block17>
+<Block18>0</Block18>
+<Block19>0</Block19>
+<Block20>0</Block20>
+<Block21>0</Block21>
+<Block22>0</Block22>
+<Block23>0</Block23>
+<Block24>0</Block24>
+<Block25>0</Block25>
+<Block26>0</Block26>
+<Block27>0</Block27>
+<Block28>0</Block28>
+<Block29>0</Block29>
+<Block30>0</Block30>
+<Block31>0</Block31>
+<Block32>0</Block32>
+<Block33>0</Block33>
+<Block34>0</Block34>
+<Block35>0</Block35>
+<Block36>0</Block36>
+<Block37>0</Block37>
+<Block38>0</Block38>
+<Block39>0</Block39>
+<Block40>0</Block40>
+<Block41>0</Block41>
+<Block42>0</Block42>
+<Block43>0</Block43>
+<Block44>0</Block44>
+<Block45>0</Block45>
+<Block46>0</Block46>
+<Block47>0</Block47>
+<Block48>0</Block48>
+<Block49>0</Block49>
+<Block50>0</Block50>
+<Block51>0</Block51>
+<Block52>0</Block52>
+<Block53>0</Block53>
+<Block54>0</Block54>
+<Block55>0</Block55>
+<Block56>0</Block56>
+<Block57>0</Block57>
+<Block58>0</Block58>
+<Block59>0</Block59>
+<Block60>0</Block60>
+<Block61>0</Block61>
+<Block62>0</Block62>
+<Block63>0</Block63>
+<Block64>0</Block64>
+<Block65>0</Block65>
+<Block66>0</Block66>
+<Block67>0</Block67>
+<Block68>0</Block68>
+<Block69>0</Block69>
+<Block70>0</Block70>
+<Block71>0</Block71>
+<Block72>0</Block72>
+<Block73>0</Block73>
+<Block74>0</Block74>
+<Block75>0</Block75>
+<Block76>0</Block76>
+<Block77>0</Block77>
+<Block78>0</Block78>
+<Block79>0</Block79>
+<Block80>0</Block80>
+<Block81>0</Block81>
+<Block82>0</Block82>
+<Block83>0</Block83>
+<Block84>0</Block84>
+<Block85>0</Block85>
+<Block86>0</Block86>
+<Block87>0</Block87>
+<Block88>0</Block88>
+<Block89>0</Block89>
+<Block90>0</Block90>
+<Block91>0</Block91>
+<Block92>0</Block92>
+<Block93>0</Block93>
+<Block94>0</Block94>
+<Block95>0</Block95>
+<Block96>0</Block96>
+</DC>
+INFO:root:16-11-2016::20-56-00:>>    reportloc:: C:\Users\admin\Desktop\report_KAPS_2_16-11-2016_20-56-00_.xml
+INFO:root:16-11-2016::20-56-00:>>    Finished
+INFO:root:16-11-2016::20-58-27:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::20-58-27:>>    Desktop
+INFO:root:16-11-2016::20-58-27:>>    salename::KAPS
+INFO:root:16-11-2016::20-58-27:>>    Time16-11-201620-58-27
+INFO:root:16-11-2016::20-58-27:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::20-58-27:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::20-58-27:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::20-58-44:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::20-58-44:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::20-58-44:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-59-09:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::20-59-09:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-59-26:>>    sucess3:http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::20-59-26:>>    <SG>
+<Block0>KAPS</Block0>
+<Block1>0.00</Block1>
+<Block2>0.00</Block2>
+<Block3>0.00</Block3>
+<Block4>0.00</Block4>
+<Block5>0.00</Block5>
+<Block6>0.00</Block6>
+<Block7>0.00</Block7>
+<Block8>0.00</Block8>
+<Block9>0.00</Block9>
+<Block10>0.00</Block10>
+<Block11>0.00</Block11>
+<Block12>0.00</Block12>
+<Block13>0.00</Block13>
+<Block14>0.00</Block14>
+<Block15>0.00</Block15>
+<Block16>0.00</Block16>
+<Block17>0.00</Block17>
+<Block18>0.00</Block18>
+<Block19>0.00</Block19>
+<Block20>0.00</Block20>
+<Block21>0.00</Block21>
+<Block22>0.00</Block22>
+<Block23>0.00</Block23>
+<Block24>0.00</Block24>
+<Block25>0.00</Block25>
+<Block26>0.00</Block26>
+<Block27>0.00</Block27>
+<Block28>0.00</Block28>
+<Block29>0.00</Block29>
+<Block30>0.00</Block30>
+<Block31>0.00</Block31>
+<Block32>0.00</Block32>
+<Block33>0.00</Block33>
+<Block34>0.00</Block34>
+<Block35>0.00</Block35>
+<Block36>0.00</Block36>
+<Block37>0.00</Block37>
+<Block38>0.00</Block38>
+<Block39>0.00</Block39>
+<Block40>0.00</Block40>
+<Block41>0.00</Block41>
+<Block42>0.00</Block42>
+<Block43>0.00</Block43>
+<Block44>0.00</Block44>
+<Block45>0.00</Block45>
+<Block46>0.00</Block46>
+<Block47>0.00</Block47>
+<Block48>0.00</Block48>
+<Block49>0.00</Block49>
+<Block50>0.00</Block50>
+<Block51>0.00</Block51>
+<Block52>0.00</Block52>
+<Block53>0.00</Block53>
+<Block54>0.00</Block54>
+<Block55>0.00</Block55>
+<Block56>0.00</Block56>
+<Block57>0.00</Block57>
+<Block58>0.00</Block58>
+<Block59>0.00</Block59>
+<Block60>0.00</Block60>
+<Block61>0.00</Block61>
+<Block62>0.00</Block62>
+<Block63>0.00</Block63>
+<Block64>0.00</Block64>
+<Block65>0.00</Block65>
+<Block66>0.00</Block66>
+<Block67>0.00</Block67>
+<Block68>0.00</Block68>
+<Block69>0.00</Block69>
+<Block70>0.00</Block70>
+<Block71>0.00</Block71>
+<Block72>0.00</Block72>
+<Block73>0.00</Block73>
+<Block74>0.00</Block74>
+<Block75>0.00</Block75>
+<Block76>0.00</Block76>
+<Block77>0.00</Block77>
+<Block78>0.00</Block78>
+<Block79>0.00</Block79>
+<Block80>0.00</Block80>
+<Block81>0.00</Block81>
+<Block82>0.00</Block82>
+<Block83>0.00</Block83>
+<Block84>0.00</Block84>
+<Block85>0.00</Block85>
+<Block86>0.00</Block86>
+<Block87>0.00</Block87>
+<Block88>0.00</Block88>
+<Block89>0.00</Block89>
+<Block90>0.00</Block90>
+<Block91>0.00</Block91>
+<Block92>0.00</Block92>
+<Block93>0.00</Block93>
+<Block94>0.00</Block94>
+<Block95>0.00</Block95>
+<Block96>0.00</Block96>
+</SG>
+<DC>
+<Block0>KAPS(0)</Block0>
+<Block1>0</Block1>
+<Block2>0</Block2>
+<Block3>0</Block3>
+<Block4>0</Block4>
+<Block5>0</Block5>
+<Block6>0</Block6>
+<Block7>0</Block7>
+<Block8>0</Block8>
+<Block9>0</Block9>
+<Block10>0</Block10>
+<Block11>0</Block11>
+<Block12>0</Block12>
+<Block13>0</Block13>
+<Block14>0</Block14>
+<Block15>0</Block15>
+<Block16>0</Block16>
+<Block17>0</Block17>
+<Block18>0</Block18>
+<Block19>0</Block19>
+<Block20>0</Block20>
+<Block21>0</Block21>
+<Block22>0</Block22>
+<Block23>0</Block23>
+<Block24>0</Block24>
+<Block25>0</Block25>
+<Block26>0</Block26>
+<Block27>0</Block27>
+<Block28>0</Block28>
+<Block29>0</Block29>
+<Block30>0</Block30>
+<Block31>0</Block31>
+<Block32>0</Block32>
+<Block33>0</Block33>
+<Block34>0</Block34>
+<Block35>0</Block35>
+<Block36>0</Block36>
+<Block37>0</Block37>
+<Block38>0</Block38>
+<Block39>0</Block39>
+<Block40>0</Block40>
+<Block41>0</Block41>
+<Block42>0</Block42>
+<Block43>0</Block43>
+<Block44>0</Block44>
+<Block45>0</Block45>
+<Block46>0</Block46>
+<Block47>0</Block47>
+<Block48>0</Block48>
+<Block49>0</Block49>
+<Block50>0</Block50>
+<Block51>0</Block51>
+<Block52>0</Block52>
+<Block53>0</Block53>
+<Block54>0</Block54>
+<Block55>0</Block55>
+<Block56>0</Block56>
+<Block57>0</Block57>
+<Block58>0</Block58>
+<Block59>0</Block59>
+<Block60>0</Block60>
+<Block61>0</Block61>
+<Block62>0</Block62>
+<Block63>0</Block63>
+<Block64>0</Block64>
+<Block65>0</Block65>
+<Block66>0</Block66>
+<Block67>0</Block67>
+<Block68>0</Block68>
+<Block69>0</Block69>
+<Block70>0</Block70>
+<Block71>0</Block71>
+<Block72>0</Block72>
+<Block73>0</Block73>
+<Block74>0</Block74>
+<Block75>0</Block75>
+<Block76>0</Block76>
+<Block77>0</Block77>
+<Block78>0</Block78>
+<Block79>0</Block79>
+<Block80>0</Block80>
+<Block81>0</Block81>
+<Block82>0</Block82>
+<Block83>0</Block83>
+<Block84>0</Block84>
+<Block85>0</Block85>
+<Block86>0</Block86>
+<Block87>0</Block87>
+<Block88>0</Block88>
+<Block89>0</Block89>
+<Block90>0</Block90>
+<Block91>0</Block91>
+<Block92>0</Block92>
+<Block93>0</Block93>
+<Block94>0</Block94>
+<Block95>0</Block95>
+<Block96>0</Block96>
+</DC>
+INFO:root:16-11-2016::20-59-26:>>    reportloc:: C:\Users\admin\Desktop\report_KAPS_2_16-11-2016_20-59-26_.xml
+INFO:root:16-11-2016::20-59-26:>>    Finished
+INFO:root:16-11-2016::21-00-47:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::21-00-47:>>    Desktop
+INFO:root:16-11-2016::21-00-47:>>    salename::KAPS
+INFO:root:16-11-2016::21-00-47:>>    Time16-11-201621-00-47
+INFO:root:16-11-2016::21-00-47:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::21-00-47:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::21-00-47:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::21-01-04:>>    salesid: 4d37ead4-6717-4687-a31c-f47f455ae8d3
+INFO:root:16-11-2016::21-01-04:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::21-01-04:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::21-01-22:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::21-01-22:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::21-01-39:>>    sucess3:http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=4d37ead4-6717-4687-a31c-f47f455ae8d3&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::21-01-39:>>    <SG>
+<Block1>0.00</Block1>
+<Block2>0.00</Block2>
+<Block3>0.00</Block3>
+<Block4>0.00</Block4>
+<Block5>0.00</Block5>
+<Block6>0.00</Block6>
+<Block7>0.00</Block7>
+<Block8>0.00</Block8>
+<Block9>0.00</Block9>
+<Block10>0.00</Block10>
+<Block11>0.00</Block11>
+<Block12>0.00</Block12>
+<Block13>0.00</Block13>
+<Block14>0.00</Block14>
+<Block15>0.00</Block15>
+<Block16>0.00</Block16>
+<Block17>0.00</Block17>
+<Block18>0.00</Block18>
+<Block19>0.00</Block19>
+<Block20>0.00</Block20>
+<Block21>0.00</Block21>
+<Block22>0.00</Block22>
+<Block23>0.00</Block23>
+<Block24>0.00</Block24>
+<Block25>0.00</Block25>
+<Block26>0.00</Block26>
+<Block27>0.00</Block27>
+<Block28>0.00</Block28>
+<Block29>0.00</Block29>
+<Block30>0.00</Block30>
+<Block31>0.00</Block31>
+<Block32>0.00</Block32>
+<Block33>0.00</Block33>
+<Block34>0.00</Block34>
+<Block35>0.00</Block35>
+<Block36>0.00</Block36>
+<Block37>0.00</Block37>
+<Block38>0.00</Block38>
+<Block39>0.00</Block39>
+<Block40>0.00</Block40>
+<Block41>0.00</Block41>
+<Block42>0.00</Block42>
+<Block43>0.00</Block43>
+<Block44>0.00</Block44>
+<Block45>0.00</Block45>
+<Block46>0.00</Block46>
+<Block47>0.00</Block47>
+<Block48>0.00</Block48>
+<Block49>0.00</Block49>
+<Block50>0.00</Block50>
+<Block51>0.00</Block51>
+<Block52>0.00</Block52>
+<Block53>0.00</Block53>
+<Block54>0.00</Block54>
+<Block55>0.00</Block55>
+<Block56>0.00</Block56>
+<Block57>0.00</Block57>
+<Block58>0.00</Block58>
+<Block59>0.00</Block59>
+<Block60>0.00</Block60>
+<Block61>0.00</Block61>
+<Block62>0.00</Block62>
+<Block63>0.00</Block63>
+<Block64>0.00</Block64>
+<Block65>0.00</Block65>
+<Block66>0.00</Block66>
+<Block67>0.00</Block67>
+<Block68>0.00</Block68>
+<Block69>0.00</Block69>
+<Block70>0.00</Block70>
+<Block71>0.00</Block71>
+<Block72>0.00</Block72>
+<Block73>0.00</Block73>
+<Block74>0.00</Block74>
+<Block75>0.00</Block75>
+<Block76>0.00</Block76>
+<Block77>0.00</Block77>
+<Block78>0.00</Block78>
+<Block79>0.00</Block79>
+<Block80>0.00</Block80>
+<Block81>0.00</Block81>
+<Block82>0.00</Block82>
+<Block83>0.00</Block83>
+<Block84>0.00</Block84>
+<Block85>0.00</Block85>
+<Block86>0.00</Block86>
+<Block87>0.00</Block87>
+<Block88>0.00</Block88>
+<Block89>0.00</Block89>
+<Block90>0.00</Block90>
+<Block91>0.00</Block91>
+<Block92>0.00</Block92>
+<Block93>0.00</Block93>
+<Block94>0.00</Block94>
+<Block95>0.00</Block95>
+<Block96>0.00</Block96>
+</SG>
+<DC>
+<Block1>0</Block1>
+<Block2>0</Block2>
+<Block3>0</Block3>
+<Block4>0</Block4>
+<Block5>0</Block5>
+<Block6>0</Block6>
+<Block7>0</Block7>
+<Block8>0</Block8>
+<Block9>0</Block9>
+<Block10>0</Block10>
+<Block11>0</Block11>
+<Block12>0</Block12>
+<Block13>0</Block13>
+<Block14>0</Block14>
+<Block15>0</Block15>
+<Block16>0</Block16>
+<Block17>0</Block17>
+<Block18>0</Block18>
+<Block19>0</Block19>
+<Block20>0</Block20>
+<Block21>0</Block21>
+<Block22>0</Block22>
+<Block23>0</Block23>
+<Block24>0</Block24>
+<Block25>0</Block25>
+<Block26>0</Block26>
+<Block27>0</Block27>
+<Block28>0</Block28>
+<Block29>0</Block29>
+<Block30>0</Block30>
+<Block31>0</Block31>
+<Block32>0</Block32>
+<Block33>0</Block33>
+<Block34>0</Block34>
+<Block35>0</Block35>
+<Block36>0</Block36>
+<Block37>0</Block37>
+<Block38>0</Block38>
+<Block39>0</Block39>
+<Block40>0</Block40>
+<Block41>0</Block41>
+<Block42>0</Block42>
+<Block43>0</Block43>
+<Block44>0</Block44>
+<Block45>0</Block45>
+<Block46>0</Block46>
+<Block47>0</Block47>
+<Block48>0</Block48>
+<Block49>0</Block49>
+<Block50>0</Block50>
+<Block51>0</Block51>
+<Block52>0</Block52>
+<Block53>0</Block53>
+<Block54>0</Block54>
+<Block55>0</Block55>
+<Block56>0</Block56>
+<Block57>0</Block57>
+<Block58>0</Block58>
+<Block59>0</Block59>
+<Block60>0</Block60>
+<Block61>0</Block61>
+<Block62>0</Block62>
+<Block63>0</Block63>
+<Block64>0</Block64>
+<Block65>0</Block65>
+<Block66>0</Block66>
+<Block67>0</Block67>
+<Block68>0</Block68>
+<Block69>0</Block69>
+<Block70>0</Block70>
+<Block71>0</Block71>
+<Block72>0</Block72>
+<Block73>0</Block73>
+<Block74>0</Block74>
+<Block75>0</Block75>
+<Block76>0</Block76>
+<Block77>0</Block77>
+<Block78>0</Block78>
+<Block79>0</Block79>
+<Block80>0</Block80>
+<Block81>0</Block81>
+<Block82>0</Block82>
+<Block83>0</Block83>
+<Block84>0</Block84>
+<Block85>0</Block85>
+<Block86>0</Block86>
+<Block87>0</Block87>
+<Block88>0</Block88>
+<Block89>0</Block89>
+<Block90>0</Block90>
+<Block91>0</Block91>
+<Block92>0</Block92>
+<Block93>0</Block93>
+<Block94>0</Block94>
+<Block95>0</Block95>
+<Block96>0</Block96>
+</DC>
+INFO:root:16-11-2016::21-01-39:>>    reportloc:: C:\Users\admin\Desktop\report_KAPS_2_16-11-2016_21-01-39_.xml
+INFO:root:16-11-2016::21-01-39:>>    Finished
+INFO:root:16-11-2016::21-03-35:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::21-03-35:>>    Desktop
+INFO:root:16-11-2016::21-03-35:>>    salename::RGPPL-GAS
+INFO:root:16-11-2016::21-03-35:>>    Time16-11-201621-03-35
+INFO:root:16-11-2016::21-03-35:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::21-03-35:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::21-03-35:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::21-03-52:>>    salesid: 2025166b-a180-4a93-9d42-494f91548a10
+INFO:root:16-11-2016::21-03-52:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::21-03-52:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=2025166b-a180-4a93-9d42-494f91548a10&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::21-04-09:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=2025166b-a180-4a93-9d42-494f91548a10&revisionNumber=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::21-04-09:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=2025166b-a180-4a93-9d42-494f91548a10&revision=60&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::21-05-47:>>    error Oops try again !
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\chaitu\code\ws\TestPython\report.py", line 179, in <module>
+    txt2=response2(r2.text)
+  File "C:\chaitu\code\ws\TestPython\report.py", line 57, in response2
+    ln=a.findall(txt)[0].replace("\\","")
+IndexError: list index out of range
+INFO:root:16-11-2016::21-05-47:>>    error Oops try again !
+INFO:root:16-11-2016::21-06-23:>>    statedC:\chaitu\code\ws\TestPython\logfile.log
+INFO:root:16-11-2016::21-06-23:>>    Desktop
+INFO:root:16-11-2016::21-06-23:>>    salename::RGPPL-GAS
+INFO:root:16-11-2016::21-06-23:>>    Time16-11-201621-06-23
+INFO:root:16-11-2016::21-06-23:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary
+INFO:root:16-11-2016::21-06-23:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport
+INFO:root:16-11-2016::21-06-23:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1
+INFO:root:16-11-2016::21-06-40:>>    salesid: 2025166b-a180-4a93-9d42-494f91548a10
+INFO:root:16-11-2016::21-06-40:>>    success1:http://103.7.130.121/WBES/ReportFullSchedule/GetUtils?regionId=2
+INFO:root:16-11-2016::21-06-40:>>    http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=2025166b-a180-4a93-9d42-494f91548a10&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::21-08-07:>>    sucess2:http://103.7.130.121/WBES/ReportFullSchedule/GetFullInjSummary?scheduleDate=16-11-2016&sellerId=2025166b-a180-4a93-9d42-494f91548a10&revisionNumber=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0
+INFO:root:16-11-2016::21-08-07:>>    http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=2025166b-a180-4a93-9d42-494f91548a10&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::21-08-24:>>    sucess3:http://103.7.130.121/WBES/Report/GetDeclarationReport?date=16-11-2016&utilId=2025166b-a180-4a93-9d42-494f91548a10&revision=51&regionId=2&byDetails=0&isDrawer=0&isBuyer=0&byOnBar=0
+INFO:root:16-11-2016::21-08-24:>>    <SG>
+<Block1>3.48</Block1>
+<Block2>2.75</Block2>
+<Block3>3.42</Block3>
+<Block4>3.15</Block4>
+<Block5>4.41</Block5>
+<Block6>3.48</Block6>
+<Block7>3.74</Block7>
+<Block8>3.74</Block8>
+<Block9>3.07</Block9>
+<Block10>3.74</Block10>
+<Block11>3.07</Block11>
+<Block12>2.34</Block12>
+<Block13>4.41</Block13>
+<Block14>4.41</Block14>
+<Block15>3.56</Block15>
+<Block16>4.32</Block16>
+<Block17>4.41</Block17>
+<Block18>4.06</Block18>
+<Block19>141.15</Block19>
+<Block20>133.91</Block20>
+<Block21>130.83</Block21>
+<Block22>79.34</Block22>
+<Block23>150.41</Block23>
+<Block24>121.56</Block24>
+<Block25>113.33</Block25>
+<Block26>137.00</Block26>
+<Block27>107.15</Block27>
+<Block28>79.34</Block28>
+<Block29>79.34</Block29>
+<Block30>3.83</Block30>
+<Block31>2.66</Block31>
+<Block32>2.34</Block32>
+<Block33>3.50</Block33>
+<Block34>2.75</Block34>
+<Block35>2.75</Block35>
+<Block36>2.39</Block36>
+<Block37>2.34</Block37>
+<Block38>2.34</Block38>
+<Block39>2.34</Block39>
+<Block40>3.15</Block40>
+<Block41>2.34</Block41>
+<Block42>3.65</Block42>
+<Block43>2.34</Block43>
+<Block44>3.48</Block44>
+<Block45>3.07</Block45>
+<Block46>4.29</Block46>
+<Block47>2.75</Block47>
+<Block48>2.34</Block48>
+<Block49>2.34</Block49>
+<Block50>3.91</Block50>
+<Block51>3.65</Block51>
+<Block52>4.29</Block52>
+<Block53>4.00</Block53>
+<Block54>4.70</Block54>
+<Block55>2.39</Block55>
+<Block56>4.70</Block56>
+<Block57>4.29</Block57>
+<Block58>4.29</Block58>
+<Block59>3.91</Block59>
+<Block60>3.91</Block60>
+<Block61>3.91</Block61>
+<Block62>3.91</Block62>
+<Block63>2.34</Block63>
+<Block64>2.39</Block64>
+<Block65>3.50</Block65>
+<Block66>3.50</Block66>
+<Block67>2.72</Block67>
+<Block68>3.12</Block68>
+<Block69>3.91</Block69>
+<Block70>3.12</Block70>
+<Block71>92.72</Block71>
+<Block72>79.34</Block72>
+<Block73>2.34</Block73>
+<Block74>2.34</Block74>
+<Block75>3.42</Block75>
+<Block76>2.72</Block76>
+<Block77>101.98</Block77>
+<Block78>106.12</Block78>
+<Block79>79.34</Block79>
+<Block80>79.34</Block80>
+<Block81>2.34</Block81>
+<Block82>2.34</Block82>
+<Block83>2.75</Block83>
+<Block84>2.34</Block84>
+<Block85>3.56</Block85>
+<Block86>2.57</Block86>
+<Block87>3.15</Block87>
+<Block88>2.34</Block88>
+<Block89>2.34</Block89>
+<Block90>2.34</Block90>
+<Block91>2.34</Block91>
+<Block92>2.83</Block92>
+<Block93>2.34</Block93>
+<Block94>2.34</Block94>
+<Block95>2.34</Block95>
+<Block96>3.07</Block96>
+</SG>
+<DC>
+<Block1>119.00</Block1>
+<Block2>94.00</Block2>
+<Block3>117.00</Block3>
+<Block4>108.00</Block4>
+<Block5>151.00</Block5>
+<Block6>119.00</Block6>
+<Block7>128.00</Block7>
+<Block8>128.00</Block8>
+<Block9>105.00</Block9>
+<Block10>128.00</Block10>
+<Block11>105.00</Block11>
+<Block12>80.00</Block12>
+<Block13>151.00</Block13>
+<Block14>151.00</Block14>
+<Block15>122.00</Block15>
+<Block16>148.00</Block16>
+<Block17>151.00</Block17>
+<Block18>139.00</Block18>
+<Block19>142.00</Block19>
+<Block20>134.00</Block20>
+<Block21>131.00</Block21>
+<Block22>80.00</Block22>
+<Block23>151.00</Block23>
+<Block24>122.00</Block24>
+<Block25>114.00</Block25>
+<Block26>137.00</Block26>
+<Block27>108.00</Block27>
+<Block28>80.00</Block28>
+<Block29>80.00</Block29>
+<Block30>131.00</Block30>
+<Block31>91.00</Block31>
+<Block32>80.00</Block32>
+<Block33>120.00</Block33>
+<Block34>94.00</Block34>
+<Block35>94.00</Block35>
+<Block36>82.00</Block36>
+<Block37>80.00</Block37>
+<Block38>80.00</Block38>
+<Block39>80.00</Block39>
+<Block40>108.00</Block40>
+<Block41>80.00</Block41>
+<Block42>125.00</Block42>
+<Block43>80.00</Block43>
+<Block44>119.00</Block44>
+<Block45>105.00</Block45>
+<Block46>147.00</Block46>
+<Block47>94.00</Block47>
+<Block48>80.00</Block48>
+<Block49>80.00</Block49>
+<Block50>134.00</Block50>
+<Block51>125.00</Block51>
+<Block52>147.00</Block52>
+<Block53>137.00</Block53>
+<Block54>161.00</Block54>
+<Block55>82.00</Block55>
+<Block56>161.00</Block56>
+<Block57>147.00</Block57>
+<Block58>147.00</Block58>
+<Block59>134.00</Block59>
+<Block60>134.00</Block60>
+<Block61>134.00</Block61>
+<Block62>134.00</Block62>
+<Block63>80.00</Block63>
+<Block64>82.00</Block64>
+<Block65>120.00</Block65>
+<Block66>120.00</Block66>
+<Block67>93.00</Block67>
+<Block68>107.00</Block68>
+<Block69>134.00</Block69>
+<Block70>107.00</Block70>
+<Block71>93.00</Block71>
+<Block72>80.00</Block72>
+<Block73>80.00</Block73>
+<Block74>80.00</Block74>
+<Block75>117.00</Block75>
+<Block76>93.00</Block76>
+<Block77>102.00</Block77>
+<Block78>107.00</Block78>
+<Block79>80.00</Block79>
+<Block80>80.00</Block80>
+<Block81>80.00</Block81>
+<Block82>80.00</Block82>
+<Block83>94.00</Block83>
+<Block84>80.00</Block84>
+<Block85>122.00</Block85>
+<Block86>88.00</Block86>
+<Block87>108.00</Block87>
+<Block88>80.00</Block88>
+<Block89>80.00</Block89>
+<Block90>80.00</Block90>
+<Block91>80.00</Block91>
+<Block92>97.00</Block92>
+<Block93>80.00</Block93>
+<Block94>80.00</Block94>
+<Block95>80.00</Block95>
+<Block96>105.00</Block96>
+</DC>
+INFO:root:16-11-2016::21-08-24:>>    reportloc:: C:\Users\admin\Desktop\report_RGPPL-GAS_2_16-11-2016_21-08-24_.xml
+INFO:root:16-11-2016::21-08-24:>>    Finished
