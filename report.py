@@ -44,8 +44,8 @@ def xmloutput(bx,typechar):
         sg="<"+typechar+">\n"
         for line in ft:
                 i=i+1
-                if i>1 :
-                    sg =sg+"<Block"+str(i)+">"+line.replace("\"","")+"</Block1>\n"
+                if i>=1 :
+                    sg =sg+"<Block"+str(i)+">"+line.replace("\"","")+"</Block"+str(i)+">\n"
         sg=sg+"</"+typechar+">"
 
         
@@ -120,7 +120,9 @@ def prepareHeadRequest():
 def getFullSchedule():
         global url1        
         url1=url1+"?"+"scheduleDate="+getDate()+'&sellerId='+saledId+'&revisionNumber='+revision+'&regionId='+regionId+'&byDetails=0&isDrawer=0&isBuyer=0'
+        #print('this is >>>>>>>>>>')
         print1(url1)
+        print('this is >>>>>>>>>>')
         return url1
 
 def getUtilUrl():
